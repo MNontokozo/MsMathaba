@@ -3,299 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
     <title>NAMTECH INNOVATIONS</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+
+
+
 </head>
 <body>
-
-   
+    <!-- Header -->
     <header>
-        <nav>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#">
+                        <img src="Images/Logo big.png" alt="NAMTECH INNOVATIONS Logo">
+                    </a>
+                </div>
             
-            <ul>
-                <li class="active"><a href="#"></a>Home</li>
-                <li><a href="about.html">About NAMTECH</a></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="packages.html">packages</a></li>
-                <li><a href="Blog">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-           
-        </nav>
-
-        <h1>Welcome to NAMTECH INNOVATIONS</h1>
+                <nav>
+                    
+                    <ul class="main-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li class="dropdown">
+                            <a href="#services" class="dropbtn">SERVICES</a>
+                            <div class="dropdown-content">
+                                <a href="#cybersecurity">Cybersecurity</a>
+                                <a href="#consulting">IT Consulting</a>
+                                <a href="#software">Software Development</a>
+                                <a href="#web">Web Development</a>
+                                <a href="#web">Digital Marketing</a>
+                                <a href="#design">Graphic Design</a>
+                            </div>
+                        </li>
+                        
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <div class="sidebar">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li class="dropdown">
+                                <a href="#services" class="dropbtn">SERVICES</a>
+                                <div class="dropdown-content">
+                                    <a href="#cybersecurity">Cybersecurity</a>
+                                    <a href="#consulting">IT Consulting</a>
+                                    <a href="#software">Software Development</a>
+                                    <a href="#web">Web Development</a>
+                                    <a href="#marketing">Digital Marketing</a>
+                                    <a href="#design">Graphic Design</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
     </header>
-    
 
-
-
-
-    <section id="home">
-        <h2>ABOUT US</h2>
-        <p>QUALITY SERVICES AT YOUR DOORSTEP!<br>
-            Empowering businesses through cutting-edge technology solutions.
-        </p>
-        
-
-            <p><a href="#contact" class="learn-more-button"><span>Learn More</span></a></p>
-        </section>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Innovative IT Solutions</h1>
+            <p>Transforming Your Business Through Technology</p>
+            <a href="#services" class="btn-primary">Explore Services</a>
+        </div>
+        <div id="animation-container">
+            <!-- Placeholder for 3D animation -->
+        </div>
     </section>
 
-    <section class="vision-mission-values">
-        <div class="vision">
-            <h2>Vision</h2>
-            
-                <ul>
-                    <li>NamTech Innovations is dedicated to leveraging technology to revolutionize businesses <br>and empower people.
-                    we aim to provide exceptional value by surpassing expectations<br> in quality, efficiency, and timeliness.
-                    Our focus is on cultivating long-term partnerships<br> founded on trust, integrity, and a commitment to excellence.</li>
-                  </ul>
-                  
-           <p></p>
-        </div>
-        <div class="mission">
-            <h2>Mission</h2>
-            
-                <ul>
-                <li>NamTech Innovations is dedicated to leveraging technology to revolutionize<br> businesses and empower people.
-                With our range of IT services, we aim to provide<br> exceptional value by surpassing expectations in quality, efficiency, and timeliness.<br>
-                Our focus is on cultivating long-term partnerships founded on trust, integrity, and<br> a commitment to excellence.</li>
-              </ul>
-              <p></p>
-        </div>
-        <div class="values">
-            <h2>Values</h2>
-            
-                <ul>
-                    <li>Excellence: We pursue excellence & striving for perfection in our solutions, processes, <br>and interactions.</li>
-                    <li>Innovation: We embrace innovation as the cornerstone of our success, continuously exploring<br> new ideas and technologies to drive positive change.</li>
-                    <li>Integrity: We conduct ourselves with the highest standards of integrity, honesty,<br> and transparency, earning the trust and respect of our clients, partners, and employees.</li>
-                  </ul>
-                  
-                  <p></p>
-            
-        </div>
-        <div class="why-choose-us">
-            <h1 style="font-size: 47px;"> "Empowering Tomorrow,<br> Innovating Today<br> with NamTech."</h1>
-            <a href="#" class="explore-more-button"><span>Explore More</span></a>
-        </div>
-        
-    </section>
-    
-
-    
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="line"></div>
-
-        <div class="service-container">
-            <div class="service">
-                <img src="Images/110-1104452_web-design-icon-png-account-setting-icon-transparent.png" alt="Service 1">
-                <p>Service 1 description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="learn-more-button"><span>Learn More</span></a>
+    <!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h2>What We Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Cybersecurity</h3>
+                <p>Protecting your data and systems from threats with cutting-edge technology and practices.</p>
             </div>
-
-            <div class="service">
-                <img src="Images/WhatsApp Image 2024-02-03 at 11.28.31 (4).jpeg" alt="Service 2">
-                <p>Service 2 description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="learn-more-button"><span>Learn More</span></a>
+            <div class="service-card">
+                <h3>IT Consulting</h3>
+                <p>Providing expert advice to enhance your IT infrastructure and align with your business goals.</p>
             </div>
-
-            <div class="service">
-                <img src="Images/7b47c0a64627c2682457acffea83f4e8.jpg" alt="Service 3">
-                <p>Service 3 description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="learn-more-button"><span>Learn more</span></a>
+            <div class="service-card">
+                <h3>Software Development</h3>
+                <p>Developing custom applications and integrating systems to meet your unique business needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Creating responsive and visually appealing websites to enhance your online presence.</p>
+            </div>
+            <div class="service-card">
+                <h3>Graphic Design</h3>
+                <p>Designing impactful branding materials and user interfaces to make your business stand out.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to know more? Reach out to us!</p>
-        <form action="your_server_script.php" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <section id="projects">
-        <h2>Ongoing Projects</h2>
-        <p>We are currently working on several exciting projects. Stay tuned for updates!</p>
-        <div id="project-count">
-            <h3>Number of Projects Done</h3>
-            <p>50+</p> <!-- Update with your actual number of projects -->
+<section id="business-solutions">
+    <div class="container">
+        <div class="content">
+            <div class="text">
+                <h1 class="fade-in">Ready to digitalize your business with our IT solutions?</h1>
+                <p class="fade-in">At NAMTECH INNOVATIONS, we specialize in delivering advanced IT services designed to optimize your business performance. From cybersecurity to software development, we've got you covered.</p>
+                <a href="#contact" class="cta-btn fade-in">Contact Us Today</a>
+            </div>
+            <div class="logo-container">
+                <img src="Images/NAMTECH Innovation new logo.png" alt="Company Logo" class="logo">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Our Clients Section -->
+<section id="our-clients">
+    <div class="container">
+        <div class="content">
+            <h2>Trusted by Many</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Companies Served</p>
+                </div>
+                <div class="stat-item">
+                    <h3>200+</h3>
+                    <p>People Empowered</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     
-
-    <footer>
-        <p>2 Van wijk street, Nelspruit 1201, South Africa | Phone : 083 437 6351 | Email: mathabantokozokhona@gmail.com</p>
-        <p>&copy; 2024 NAMTECH INNOVATIONS. All rights reserved.</p>
-    </footer>
-
-
-
-
-
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>NAMTECH INNOVATIONS</title>
-</head>
-<body>
-
-   
-    <header>
-        <nav>
-            
+    <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <img src="Images/Logo big.png" alt="NAMTECH INNOVATIONS Logo">
+            <p>NAMTECH INNOVATIONS is dedicated to providing top-notch IT solutions tailored to your business needs.</p>
+            <p>&copy; 2024 NAMTECH INNOVATIONS. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
             <ul>
-                <li class="active"><a href="#"></a>Home</li>
-                <li><a href="about.html">About NAMTECH</a></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="packages.html">packages</a></li>
-                <li><a href="Blog">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
-           
-        </nav>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Phone: +27 82 437 6351</p>
+            <p>Email: mathabantokozokhona@gmail.com</p>
+            <p>Address: 2 Van Wijk Street, Mbombela, South Africa</p>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="#"><img src="Images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="Images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="Images/linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
 
-        <h1>Welcome to NAMTECH INNOVATIONS</h1>
-    </header>
+
+    <script>
+        // Scene setup
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true }); // Enable transparency
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('animation-container').appendChild(renderer.domElement);
     
-
-
-
-
-    <section id="home">
-        <h2>ABOUT US</h2>
-        <p>QUALITY SERVICES AT YOUR DOORSTEP!<br>
-            Empowering businesses through cutting-edge technology solutions.
-        </p>
-        
-
-            <p><a href="#contact" class="learn-more-button"><span>Learn More</span></a></p>
-        </section>
-    </section>
-
-    <section class="vision-mission-values">
-        <div class="vision">
-            <h2>Vision</h2>
-            
-                <ul>
-                    <li>NamTech Innovations is dedicated to leveraging technology to revolutionize businesses <br>and empower people.
-                    we aim to provide exceptional value by surpassing expectations<br> in quality, efficiency, and timeliness.
-                    Our focus is on cultivating long-term partnerships<br> founded on trust, integrity, and a commitment to excellence.</li>
-                  </ul>
-                  
-           <p></p>
-        </div>
-        <div class="mission">
-            <h2>Mission</h2>
-            
-                <ul>
-                <li>NamTech Innovations is dedicated to leveraging technology to revolutionize<br> businesses and empower people.
-                With our range of IT services, we aim to provide<br> exceptional value by surpassing expectations in quality, efficiency, and timeliness.<br>
-                Our focus is on cultivating long-term partnerships founded on trust, integrity, and<br> a commitment to excellence.</li>
-              </ul>
-              <p></p>
-        </div>
-        <div class="values">
-            <h2>Values</h2>
-            
-                <ul>
-                    <li>Excellence: We pursue excellence & striving for perfection in our solutions, processes, <br>and interactions.</li>
-                    <li>Innovation: We embrace innovation as the cornerstone of our success, continuously exploring<br> new ideas and technologies to drive positive change.</li>
-                    <li>Integrity: We conduct ourselves with the highest standards of integrity, honesty,<br> and transparency, earning the trust and respect of our clients, partners, and employees.</li>
-                  </ul>
-                  
-                  <p></p>
-            
-        </div>
-        <div class="why-choose-us">
-            <h1 style="font-size: 47px;"> "Empowering Tomorrow,<br> Innovating Today<br> with NamTech."</h1>
-            <a href="#" class="explore-more-button"><span>Explore More</span></a>
-        </div>
-        
-    </section>
+        // Geometry and wireframe material
+        const geometry = new THREE.BoxGeometry(2, 2, 2);
+        const material = new THREE.MeshBasicMaterial({
+            color: 0x808080, // Grey color
+            wireframe: true // Enable wireframe to create net-like appearance
+        });
+        const wireframeCube = new THREE.Mesh(geometry, material);
+        scene.add(wireframeCube);
     
+        // Camera position
+        camera.position.z = 5;
+    
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            wireframeCube.rotation.x += 0.01;
+            wireframeCube.rotation.y += 0.01;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        //menu button
+        document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('mobile-menu');
+    const sidebar = document.querySelector('.sidebar');
+
+    menuToggle.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+    });
+});
+
+    </script>
+
 
     
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="line"></div>
-
-        <div class="service-container">
-            <div class="service">
-                <img src="Images/110-1104452_web-design-icon-png-account-setting-icon-transparent.png" alt="Service 1">
-                <p>Service 1 description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="learn-more-button"><span>Learn More</span></a>
-            </div>
-
-            <div class="service">
-                <img src="Images/WhatsApp Image 2024-02-03 at 11.28.31 (4).jpeg" alt="Service 2">
-                <p>Service 2 description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="learn-more-button"><span>Learn More</span></a>
-            </div>
-
-            <div class="service">
-                <img src="Images/7b47c0a64627c2682457acffea83f4e8.jpg" alt="Service 3">
-                <p>Service 3 description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="learn-more-button"><span>Learn more</span></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to know more? Reach out to us!</p>
-        <form action="your_server_script.php" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <section id="projects">
-        <h2>Ongoing Projects</h2>
-        <p>We are currently working on several exciting projects. Stay tuned for updates!</p>
-        <div id="project-count">
-            <h3>Number of Projects Done</h3>
-            <p>50+</p> <!-- Update with your actual number of projects -->
-        </div>
-    </section>
-    
-
-    <footer>
-        <p>2 Van wijk street, Nelspruit 1201, South Africa | Phone : 083 437 6351 | Email: mathabantokozokhona@gmail.com</p>
-        <p>&copy; 2024 NAMTECH INNOVATIONS. All rights reserved.</p>
-    </footer>
-
-
-
-
-
-
 </body>
 </html>
