@@ -19,6 +19,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.render('index', { title: 'Home', message: 'Welcome to Express with EJS!' });
 });
+// Define Route 1
+app.get('/about us', (req, res) => {
+  res.send('This is the About Us page.');
+});
+
+// Define Contact Us route
+app.get('/contact us', (req, res) => {
+  res.send('This is the Contact Us page.');
+});
 
 // Start the server
 const PORT = process.env.PORT || 3000;
