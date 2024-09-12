@@ -21,12 +21,12 @@ app.get('/', (req, res) => {
 });
 // Define Route 1
 app.get('/about', (req, res) => {
-  res.render('aboutUs', {title: 'contact us', message: 'Welcome to Express with EJS!' });
+  res.render('about', {title: 'contact us', message: 'Welcome to Express with EJS!' });
 });
 
 // Define Contact Us route
 app.get('/contact-us', (req, res) => {
-  res.render('contactUs', { title: 'contact us', message: 'Welcome to Express with EJS!' });
+  res.render('contact', { title: 'contact us', message: 'Welcome to Express with EJS!' });
 });
 
 // Start the server
