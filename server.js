@@ -26,7 +26,7 @@ app.get('/about', (req, res) => {
 
 // Define Contact Us route
 app.get('/contact-us', (req, res) => {
-  res.render('contactUs' { title: 'contact us', message: 'Welcome to Express with EJS!' });
+  res.render('contactUs', { title: 'contact us', message: 'Welcome to Express with EJS!' });
 });
 
 // Start the server
