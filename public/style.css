@@ -225,7 +225,7 @@ nav ul li a:hover {
     text-align: center;
     height: 100vh;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('Images/black\ digital.jpg') no-repeat center center/cover;
+                url('Images/Images/black\ digital.jpg') no-repeat center center/cover;
     position: relative;
     color: #fff;
     margin: 0; /* Ensure no margin around the hero section */
@@ -458,7 +458,7 @@ nav ul li a:hover {
 
 /* About Us Section Styles */
 #about-hero {
-    background: url('Images/server.jpg') no-repeat center center/cover;
+    background: url('Images/Images/server.jpg') no-repeat center center/cover;
     padding: 100px 0;
     text-align: center;
     color: white;
