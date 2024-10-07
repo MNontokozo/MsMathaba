@@ -311,7 +311,7 @@ nav ul li a:hover {
     animation: fade-in 1.5s forwards ease-in-out;
 }
 #business-solutions .cta-btn {
-    display: block;
+    display: inline-block;
     padding: 15px 30px;
     background-color: #360361;
     color: white;
