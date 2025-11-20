@@ -1,9 +1,5 @@
-// server.js
-
 const express = require('express');
 const path = require('path');
-
-// Initialize the app
 const app = express();
 
 // Set the view engine to EJS
@@ -19,18 +15,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.render('index', { title: 'Home', message: 'Welcome to Express with EJS!' });
 });
+
 // Define Route 1
-app.get('/about.html', (req, res) => {
-  res.render('about', {title: 'about us', message: 'Welcome to Express with EJS!' });
+app.get('/about', (req, res) => {
+    res.render('about', { title: 'About us', message: 'Welcome to Express with EJS!' });
 });
 
 // Define Contact Us route
-app.get('/contact.html', (req, res) => {
-  res.render('contact', { title: 'contact us', message: 'Welcome to Express with EJS!' });
+app.get('/contact', (req, res) => {
+    res.render('contact', { title: 'Contact us', message: 'Welcome to Express with EJS!' });
 });
 
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+// Export the app for Vercel
+module.exports = app;
