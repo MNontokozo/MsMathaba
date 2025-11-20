@@ -12,17 +12,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Define a route for the home page
-app.get('/', (req, res) => {
+app.get('/index.html', (req, res) => {
     res.render('index', { title: 'Home', message: 'Welcome to Express with EJS!' });
 });
 
 // Define Route 1
-app.get('/about', (req, res) => {
+app.get('/about.html', (req, res) => {
     res.render('about', { title: 'About us', message: 'Welcome to Express with EJS!' });
 });
 
 // Define Contact Us route
-app.get('/contact', (req, res) => {
+app.get('/contact.html', (req, res) => {
     res.render('contact', { title: 'Contact us', message: 'Welcome to Express with EJS!' });
 });
 
